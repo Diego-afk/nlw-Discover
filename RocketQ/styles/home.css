@@ -1,0 +1,51 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+    
+    grid-template-areas: 
+    'header header' 
+    'left right'
+}
+
+header{
+    grid-area: header;
+}
+
+/* ilustração do lado esquerdo */
+#bg{
+    grid-area: left;
+    /* sem repetir a imagem e se alinhar ao topo */
+    background: url('/RocketQ/Assets/home-bg-img.svg') no-repeat top/contain;
+}
+
+main{
+    grid-area: right;
+    /* flexbox - colocar a flex e já alinhar os itens no centro */
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    /* quer dizer que o mínimo é 36.3 e se passar, vai ser 100%, pra não fugir da tela */
+    width: min(36.3rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+input{
+    /* .2rem = 0.2rem */
+    border: .2rem solid var(--grey-blue);
+    padding: 1.6rem;
+}
+
+/* parte do input e do botão de entrar na sala */
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
