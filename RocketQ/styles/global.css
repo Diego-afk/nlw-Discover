@@ -28,6 +28,7 @@ html{
 }
 
 body{
+    display: flex;
     height: 100vh; /*view height = tamanho da tela --- width: 100vw; /*view width = largura da tela*/
     background: var(--background); /*Uso da variável declarada anteriormente*/
 }
