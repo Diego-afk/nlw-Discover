@@ -54,6 +54,8 @@
     padding: 1.6rem;
     /* bordas das arestas do campo de pergunta - em ordem de sentido horário */
     border-radius: 0 .8rem .8rem .8rem;
+    /* margem pra dividir as a textarea de pergunta com as perguntas */
+    margin-bottom: 1.6rem;
 }
 
 #question-form form textarea{
